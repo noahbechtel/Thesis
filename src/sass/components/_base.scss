@@ -238,7 +238,11 @@ position: fixed;
   right: 60%;
   font-size: 5vw
 }
-
+#trade{
+	position: absolute;
+	left:0;
+	bottom: 0;
+}
 
 
 @media screen and (max-width: 1000px) {
