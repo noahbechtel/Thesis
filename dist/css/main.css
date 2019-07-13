@@ -1,0 +1,392 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2019 YOUR NAME
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/**
+ * @section Base Styles
+ */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono:500|Roboto:500&display=swap");
+/* line 10, src/sass/components/_base.scss */
+body {
+  width: 100%;
+  margin: 0 auto;
+  color: #FFFFFF;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-image: url("/background.jpg");
+}
+
+/* line 19, src/sass/components/_base.scss */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 23, src/sass/components/_base.scss */
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 8vh;
+  text-align: left;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+
+/* line 31, src/sass/components/_base.scss */
+h2, a {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 1.5vw;
+  text-align: left;
+  color: #e0e0e0;
+}
+
+/* line 39, src/sass/components/_base.scss */
+a {
+  text-decoration: none;
+  font-size: 1.5vw;
+  padding: 1.3vw;
+  color: #FFFFFF;
+}
+
+/* line 45, src/sass/components/_base.scss */
+a:hover {
+  background-color: #FFFFFF;
+  color: #0D1225;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+/* line 50, src/sass/components/_base.scss */
+h3 {
+  font-family: 'Roboto';
+  font-size: 1.1vw;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 2%;
+  font-weight: 900;
+}
+
+/* line 58, src/sass/components/_base.scss */
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.5vh;
+  text-align: left;
+  color: #e0e0e0;
+}
+
+/* line 66, src/sass/components/_base.scss */
+form {
+  position: relative;
+  padding: 8%;
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+/* line 75, src/sass/components/_base.scss */
+form h3, form p {
+  text-align: center;
+}
+
+/* line 79, src/sass/components/_base.scss */
+form a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.5vh;
+  text-align: left;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0%;
+}
+
+/* line 89, src/sass/components/_base.scss */
+input {
+  border: none;
+  border-left: 1px solid #A09590;
+  border-top: .5px solid #A09590;
+  border-right: 1px solid #A09590;
+  font-family: 'Roboto';
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 1.2vw;
+  font-weight: 300;
+  color: #e0e0e0;
+  padding: 5%;
+}
+
+/* line 101, src/sass/components/_base.scss */
+input::-webkit-input-placeholder {
+  color: #e0e0e0;
+  opacity: 1;
+}
+input:-ms-input-placeholder {
+  color: #e0e0e0;
+  opacity: 1;
+}
+input::-ms-input-placeholder {
+  color: #e0e0e0;
+  opacity: 1;
+}
+input::placeholder {
+  color: #e0e0e0;
+  opacity: 1;
+}
+
+/* line 106, src/sass/components/_base.scss */
+:-ms-input-placeholder {
+  color: #e0e0e0;
+}
+
+/* line 110, src/sass/components/_base.scss */
+::-ms-input-placeholder {
+  color: #e0e0e0;
+}
+
+/* line 113, src/sass/components/_base.scss */
+input[type=text] {
+  border-radius: 3px 3px 0px 0px;
+}
+
+/* line 117, src/sass/components/_base.scss */
+button {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #2C99ED;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1.5vw;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: background 250ms ease-in-out,  -webkit-transform 150ms ease;
+  transition: background 250ms ease-in-out,  -webkit-transform 150ms ease;
+  transition: background 250ms ease-in-out,  transform 150ms ease;
+  transition: background 250ms ease-in-out,  transform 150ms ease,  -webkit-transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0px 0px 3px 3px;
+}
+
+/* line 137, src/sass/components/_base.scss */
+button:hover,
+button:focus {
+  background: #0053ba;
+}
+
+/* line 142, src/sass/components/_base.scss */
+footer {
+  position: fixed;
+  bottom: 1%;
+  left: 60%;
+  width: 100%;
+  opacity: 1;
+}
+
+/* line 149, src/sass/components/_base.scss */
+footer nav a {
+  font-family: 'Roboto';
+  font-size: 1vw;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1.5vw;
+  font-weight: 900;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+/* line 162, src/sass/components/_base.scss */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 167, src/sass/components/_base.scss */
+#content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 174, src/sass/components/_base.scss */
+#title {
+  width: 30vw;
+  padding: 8%;
+}
+
+/* line 180, src/sass/components/_base.scss */
+#stamp {
+  position: absolute;
+  left: 3%;
+  top: 1%;
+}
+
+/* line 187, src/sass/components/_base.scss */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+/* line 201, src/sass/components/_base.scss */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 3vw;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+/* line 211, src/sass/components/_base.scss */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+/* line 216, src/sass/components/_base.scss */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* line 223, src/sass/components/_base.scss */
+#menu-btn {
+  position: fixed;
+  right: 1%;
+  top: 2%;
+}
+
+/* line 228, src/sass/components/_base.scss */
+#menu-btn div {
+  width: 35px;
+  height: 3px;
+  background-color: #FFFFFF;
+  margin: 6px 0;
+}
+
+/* line 235, src/sass/components/_base.scss */
+#toggle {
+  position: fixed;
+  top: 48%;
+  right: 60%;
+  font-size: 5vw;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 245, src/sass/components/_base.scss */
+  body {
+    background-size: 300%;
+    background-position-x: 20%;
+    background-repeat: no-repeat;
+    padding: 8%;
+  }
+  /* line 253, src/sass/components/_base.scss */
+  #stamp {
+    position: relative;
+    text-align: center;
+  }
+  /* line 258, src/sass/components/_base.scss */
+  form, #title, input, #content {
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* line 262, src/sass/components/_base.scss */
+  button {
+    padding: 10%;
+    width: 110vw;
+  }
+  /* line 266, src/sass/components/_base.scss */
+  input, button, h2, h3 {
+    font-size: 8vw;
+  }
+  /* line 270, src/sass/components/_base.scss */
+  header nav a {
+    text-align: center;
+    padding: 4%;
+    font-size: 5vw;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  /* line 278, src/sass/components/_base.scss */
+  footer {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  /* line 284, src/sass/components/_base.scss */
+  footer nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  /* line 288, src/sass/components/_base.scss */
+  footer nav a {
+    font-size: 6vw;
+    padding: 4%;
+  }
+  /* line 292, src/sass/components/_base.scss */
+  .sidenav a {
+    font-size: 8vw;
+  }
+}
